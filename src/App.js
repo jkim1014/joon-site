@@ -1,26 +1,22 @@
 import React, { Component } from 'react'
-import ApolloClient from 'apollo-boost'
-import { ApolloProvider } from 'react-apollo'
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
-import config from './config'
+import { ThemeProvider } from 'styled-components'
+import theme from './theme'
 import Home from './containers/Home/'
-
-// creates new client
-const client = new ApolloClient({
-  uri: config.graphqlUrl
-})
+import About from './containers/About/'
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <ApolloProvider client={client}>
+        <ThemeProvider theme={theme}>
           <div className="App">
             <Switch>
+              <Route path="/about" component={About} />
               <Route path="/" component={Home} />
             </Switch>
           </div>
-        </ApolloProvider>
+        </ThemeProvider>
       </Router>
     )
   }

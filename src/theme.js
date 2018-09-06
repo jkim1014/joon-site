@@ -2,11 +2,11 @@ import { load } from 'webfontloader'
 
 load({
   google: {
-    families: [ 'Chivo', 'Open Sans' ],
+    families: ['Chivo', 'Open Sans']
   },
   typekit: {
-    id: 'jan0inu',
-  },
+    id: 'jan0inu'
+  }
 })
 const theme = {
   colors: {
@@ -18,21 +18,21 @@ const theme = {
     fontPrimary: '#ffffff',
     fontSecondary: '#000000',
     fontTertiary: '#1f66e5', // darker blue
-    fontHeader: '#ffffff', // coral
+    fontHeader: '#ffffff' // coral
   },
   fonts: {
     header: {
       family: 'Chivo',
-      weight: 'bold',
+      weight: 'bold'
     },
     title: {
       family: 'Chivo',
-      weight: 'regular',
+      weight: 'regular'
     },
     content: {
       family: 'Open Sans Light',
-      weight: 'light',
-    },
-  },
+      weight: 'light'
+    }
+  }
 }
 export default theme
