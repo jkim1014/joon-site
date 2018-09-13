@@ -9,6 +9,20 @@ load({
   }
 })
 const theme = {
+  breakpoints: {
+    medium: {
+      floor: '1330px', // For use with max-width
+      ceiling: '1331px' // For use with min-width
+    },
+    small: {
+      floor: '900px',
+      ceiling: '901px'
+    },
+    mobile: {
+      floor: '800px',
+      ceiling: '800px'
+    }
+  },
   colors: {
     primary: '#ffffff', // white
     secondary: '#000000', // black
