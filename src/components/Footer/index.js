@@ -26,8 +26,8 @@ class Footer extends Component {
             >
               Github
             </StyledExternalLink>
-            <TextLink to="/about">About Us</TextLink>
-            <TextLink to="/contact">Contact Us</TextLink>
+            <TextLink to="/about">About</TextLink>
+            <TextLink to="/contact">Contact</TextLink>
           </Row>
           <Label>© 2018 Joon Kim</Label>
         </RightColumn>
