@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import theme from './theme'
+import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './containers/Home/'
 import About from './containers/About/'
@@ -12,6 +13,7 @@ const View = ({ component: MainComponent, path, ...rest }) => (
     {...rest}
     component={props => (
       <div>
+        <Navbar />
         <MainComponent {...props} />
         <Footer />
       </div>

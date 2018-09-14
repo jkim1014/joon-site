@@ -39,6 +39,10 @@ const theme = {
       family: 'Chivo',
       weight: 'bold'
     },
+    navLink: {
+      family: 'Chivo',
+      weight: 'regular'
+    },
     title: {
       family: 'Chivo',
       weight: 'regular'
