@@ -10,7 +10,7 @@ class Home extends Component {
   render() {
     return (
       <Container>
-        <Navbar />
+        <Navbar color="white" backCol="#92b4f2" />
         <Landing />
         <Description />
         <ProjectContainer projects={config.projects1} />

@@ -48,7 +48,7 @@ const theme = {
       weight: 'regular'
     },
     content: {
-      family: 'Open Sans Light',
+      family: 'Chivo',
       weight: 'light'
     }
   }

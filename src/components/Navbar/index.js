@@ -31,13 +31,13 @@ class NavigationBar extends Component {
   render() {
     const DesktopTabs = () => (
       <NavItems>
-        <NavItem purple={'white'} to="/">
+        <NavItem purple={this.props.color} to="/">
           Home/Projects
         </NavItem>
-        <NavItem purple={'white'} to="/about">
+        <NavItem purple={this.props.color} to="/about">
           About Me
         </NavItem>
-        <NavItem purple={'white'} to="/contact">
+        <NavItem purple={this.props.color} to="/contact">
           Contact
         </NavItem>
       </NavItems>
@@ -47,7 +47,7 @@ class NavigationBar extends Component {
         <Mobile>
           <HamburgerMenu purple={this.props.purple} />
         </Mobile>
-        <Container backCol={'#92b4f2'}>
+        <Container backCol={this.props.backCol}>
           <DesktopTabs />
         </Container>
       </Wrapper>
