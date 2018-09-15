@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 import { Background, Container, Header } from './styles'
+import BackButton from '../../components/BackButton'
 
-class Landing extends Component {
+class AnnenbergHelper extends Component {
   render() {
     return (
       <Container>
         <Background />
-        <Header>{'Here is some cool sh*t >:)'}</Header>
+        <BackButton />
+        <Header>Annenberg Helper</Header>
       </Container>
     )
   }
 }
 
-export default Landing
+export default AnnenbergHelper

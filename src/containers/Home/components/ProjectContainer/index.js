@@ -10,6 +10,7 @@ class ProjectContainer extends Component {
         {projects.map(project => (
           <ProjectCard
             title={project.title}
+            display={project.display}
             thumbNail={project.thumbNail}
             firstColor={project.firstColor}
             secondColor={project.secondColor}

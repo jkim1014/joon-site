@@ -8,6 +8,9 @@ export const Container = styled(Flex)`
   height: 194px;
   background-color: #f5f5f5;
   flex-direction: row;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: -5px;
   padding-left: 79px;
   padding-top: 41px;
   padding-right: 43px;

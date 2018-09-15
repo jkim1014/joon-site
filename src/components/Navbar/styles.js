@@ -8,11 +8,12 @@ import React from 'react'
 export const Container = styled(Flex)`
   flex: 1;
   flex-direction: row;
+  background-color: ${props => props.backCol};
 `
 export const Wrapper = styled(Flex)`
   width: 100%;
   height: 50px;
-  margin-top: 50px;
+  margin-top: 10px;
   @media only screen and (max-width: ${({ theme }) =>
       theme.breakpoints.medium.floor}) {
     position: absolute;
@@ -24,22 +25,6 @@ export const Picture = styled.img`
   height: 19px;
   padding-top: 18px;
   padding-left: 25px;
-`
-
-export const StyledExternalLink = styled.a`
-  font-family: ${({ theme }) => theme.fonts.navLink.family};
-  font-weight: ${({ theme }) => theme.fonts.navLink.weight};
-  font-size: 16px;
-  letter-spacing: 0.6px;
-  padding-top: 5px;
-  &:hover {
-    border-bottom: ${({ theme, purple }) =>
-      `2px solid ${purple ? '#fff' : theme.colors.tertiary}`};
-  }
-  padding-top: 19px;
-  margin-right: 66px;
-  text-decoration: none;
-  color: ${props => (props.purple ? '#fff' : '#000')};
 `
 
 const StyledNavLink = styled(NavLink)`
@@ -75,22 +60,6 @@ export const NavItems = styled(Flex)`
   @media only screen and (max-width: ${({ theme }) =>
       theme.breakpoints.medium.floor}) {
     display: none;
-  }
-`
-
-export const Logout = styled(Flex)`
-  font-family: ${({ theme }) => theme.fonts.navLink.family};
-  color: white;
-  font-weight: 200;
-  font-size: 11px;
-  letter-spacing: 0.6px;
-  padding-top: 20px;
-  margin-right: 33px;
-  text-decoration: none;
-  align-self: flex-start;
-  color: #d1d4df;
-  &:hover {
-    color: white;
   }
 `
 

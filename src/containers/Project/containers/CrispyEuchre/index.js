@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 import { Background, Container, Header } from './styles'
+import BackButton from '../../components/BackButton'
 
-class Landing extends Component {
+class CrispyEuchre extends Component {
   render() {
     return (
       <Container>
         <Background />
-        <Header>{'Here is some cool sh*t >:)'}</Header>
+        <BackButton />
+        <Header>Crispy Euchre</Header>
       </Container>
     )
   }
 }
 
-export default Landing
+export default CrispyEuchre

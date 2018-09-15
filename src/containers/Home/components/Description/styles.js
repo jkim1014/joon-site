@@ -5,15 +5,14 @@ export const Container = styled(Flex)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  height: 200px;
+  background-color: white;
 `
-
-export const Background = styled.img``
 
 export const Header = styled(Flex)`
   font-family: ${({ theme }) => theme.fonts.header.family};
   font-weight: ${({ theme }) => theme.fonts.header.weight};
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   letter-spacing: 0.6px;
 `

@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
-import { Container, Text } from './styles'
+import { Container, NavItem } from './styles'
 
 class ProjectCard extends Component {
   render() {
-    const { title, thumbNail, firstColor, secondColor } = this.props
+    const { title, display, thumbNail, firstColor, secondColor } = this.props
     return (
       <Container>
-        <Text>{title}</Text>
-        <Text>{firstColor}</Text>
-        <Text>{thumbNail}</Text>
-        <Text>{secondColor}</Text>
+        <NavItem purple="white" to={`/project/${title}`}>
+          {display}
+          {thumbNail}
+          {firstColor}
+          {secondColor}
+        </NavItem>
       </Container>
     )
   }
