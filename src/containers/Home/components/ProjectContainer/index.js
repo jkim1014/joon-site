@@ -14,6 +14,8 @@ class ProjectContainer extends Component {
             thumbNail={project.thumbNail}
             firstColor={project.firstColor}
             secondColor={project.secondColor}
+            height={project.height}
+            width={project.width}
           />
         ))}
       </Container>
