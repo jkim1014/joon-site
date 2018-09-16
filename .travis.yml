@@ -1,0 +1,29 @@
+language: node_js
+node_js:
+- '8'
+sudo: false
+script:
+- npm run lint
+before_deploy:
+- npm run build
+deploy:
+- provider: s3
+  access_key_id: "$AWS_ACCESS_KEY_ID"
+  secret_access_key: "$AWS_SECRET_ACCESS_KEY"
+  on:
+    branch: master
+  bucket: joonykim.com
+  local_dir: build
+  skip_cleanup: true
+- provider: s3
+  access_key_id: "$AWS_ACCESS_KEY_ID"
+  secret_access_key: "$AWS_SECRET_ACCESS_KEY"
+  on:
+    branch: production
+  bucket: joonykim.com
+  local_dir: build
+  skip_cleanup: true
+env:
+  global:
+  - secure: hV7bfU2LV3aAMN3UDW4o8cqV/sKM7FcmpnixvOz1wNdY22/+YMf5txCHQw5RRKgTD4+MANUWTUZ6bQgLcTpZFpDc9pJcGgSCEwajbg2TQF+oCj5uctkFBJHHSJG/51gduVIkc/+OqUT1ra5qeQyA8ooC/+kh5W2W2GzDTR078mkFfVTUBzd8luOivIq/9fNP5xHm3cN7exn7V4J/vUgE4OXmAoSLdpRFe9RY3oFRTzvuFAKLItABzSQGsy+YoXv+VrkvtYtk2HBnuuX/XC+E8zED1pgpI6p8xSJufZpaQOschzCjcxozkh4ipj+UKl54atbWA16T6Lmx9NDUq3UoO4i885Xu+NjrKA4iqlYLIm1XculJXuxPtZOYGkDnD+IDKH/2tU+eS1X46osSGiOBA6/658MAIhUwme0IVojJORJdblW65J29Hdk273uu9wrofSVXUmobNESLPStX80Xd1VG2ciCwaDsiBrvBUS1WbWFxHOmEA1d/mvScbn1LdcLjl61B6ueYbPNAkY8WirPS+k2fZD63Qd46WoW94K2Vt15d741BzzgXG8ABSJOZf152POROAa9y84FygFtL2pEwaWRf6Nvdn1WBk3eYmICX4oSPwsGJdizgdD3VvFGdNIMEjYMBNlEVUozpatfR57kE2W0Z+Qvlp8IkAQymd4jkLkI=
+  - secure: Bu7U0GsqvkV3irMqWdFBQaOAoLL1CTEhek2brsdJ8ul4F42OtQcwMlfu3j3K7glD230lCNO9WBQZ4fkU48jWvKyQOfsz+wW/CI3eZ+gp+UlO6qNOSd5h5IJnf55TAMCdByfQxpcdWNaIpAzQHjmP1XZKTTG2A/8guytbp+WuqTa/I7zGqSE3U1Tz1hUls0t47oXviSJoRaQdNUGD4vtl00oJ0z/X3XB1effS0aUMvvkyRWYDEqngXAKVjX5xpjegi3W7Rkw3okf3rT4Qym0nC/I/S1Zi8Akuq4WpW4b7cd5dp6mjtDAcmKuSWU4PnXV1GJXW/13cRlEZiCUsKE5q61Na7qf2uMRrSr3qWMELBcvIsqz8NF8Doh2wXhGxPiVt7oa1au0u4/YQNlvrnUMKLZl7TkjAGdL+1HbFRRmSZ5dw/+aQKtTtnTqon9EvaK3PiCr6XY//Pv1f1mb6FCoVNxaeu9amo14PENGt3PUkR7wOixOQ+SEpQ6rIsZeEqhnv5yC6VhE1ATeIykUkS1gPACLT0X0msl5nDc7r1OYN+LMrf95Dq43BZPoAV7RJ7GBbBTqDoGJeqHAkzW0lHmAyvuCMtQ24f524b9jxDOvGFfS/r8LlPfJ4JHXSAZssT1TQ+4iYSv11vbRjjf4Ck1MglYXdoLUFwFNyC+nHxWZCF3s=

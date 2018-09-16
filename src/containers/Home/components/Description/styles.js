@@ -13,6 +13,6 @@ export const Header = styled(Flex)`
   font-family: ${({ theme }) => theme.fonts.header.family};
   font-weight: ${({ theme }) => theme.fonts.header.weight};
   text-align: center;
-  font-size: 30px;
+  font-size: 26px;
   letter-spacing: 0.6px;
 `
