@@ -5,7 +5,7 @@ export const Container = styled(Flex)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 50%;
   background-color: white;
 `
 
@@ -13,6 +13,6 @@ export const Header = styled(Flex)`
   font-family: ${({ theme }) => theme.fonts.header.family};
   font-weight: ${({ theme }) => theme.fonts.header.weight};
   text-align: center;
-  font-size: 26px;
+  font-size: 300%;
   letter-spacing: 0.6px;
 `

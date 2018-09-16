@@ -4,7 +4,7 @@ import Landing from './components/Landing'
 import Description from './components/Description'
 import ProjectContainer from './components/ProjectContainer'
 import Navbar from '../../components/Navbar'
-import { Container } from './styles'
+import { Container, Projects } from './styles'
 
 class Home extends Component {
   render() {
@@ -12,9 +12,11 @@ class Home extends Component {
       <Container>
         <Navbar color="white" backCol="#92b4f2" />
         <Landing />
-        <Description />
-        <ProjectContainer projects={config.projects1} />
-        <ProjectContainer projects={config.projects2} />
+        <Projects>
+          <Description />
+          <ProjectContainer projects={config.projects1} />
+          <ProjectContainer projects={config.projects2} />
+        </Projects>
       </Container>
     )
   }

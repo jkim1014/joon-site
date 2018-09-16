@@ -11,7 +11,7 @@ class ProjectContainer extends Component {
           <ProjectCard
             title={project.title}
             display={project.display}
-            thumbNail={project.thumbNail}
+            num={project.num}
             firstColor={project.firstColor}
             secondColor={project.secondColor}
             height={project.height}

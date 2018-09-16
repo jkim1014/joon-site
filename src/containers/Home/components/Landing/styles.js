@@ -6,6 +6,7 @@ export const Container = styled(Flex)`
   justify-content: center;
   align-items: center;
   color: white;
+  height: 104vh;
 `
 
 export const Background = styled.img``

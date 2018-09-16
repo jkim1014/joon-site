@@ -1,68 +1,60 @@
-import Harvard from './img/Harvard.png'
-import HSA from './img/HSA.png'
-import Jack from './img/Jack.png'
-import Joyfull from './img/Joyfull.png'
-import PineapplePair from './img/PineapplePair.png'
-import HouseGrilles from './img/HouseGrilles'
-
-
 export default {
   projects1: [
     {
       title: 'joyfull',
       display: 'Joyfull',
-      thumbNail: Joyfull,
-      firstColor: 'red',
+      num: 1,
+      firstColor: '#57bfa7',
       secondColor: 'black',
-      height: '25px',
-      width: '110px'
+      height: '90px',
+      width: '370px'
     },
     {
       title: 'hsatime',
       display: 'HSA Time Tracker',
-      thumbNail: HSA,
-      firstColor: 'red',
+      num: 2,
+      firstColor: 'grey',
       secondColor: 'black',
-      height: '25px',
-      width: '110px'
+      height: '130px',
+      width: '300px'
     },
     {
       title: 'pineapplepair',
       display: 'Pineapple Pair',
-      thumbNail: PineapplePair,
-      firstColor: 'red',
+      num: 3,
+      firstColor: '#2d406c',
       secondColor: 'black',
-      height: '50px',
-      width: '50px'
+      height: '200px',
+      width: '200px'
     }
   ],
   projects2: [
     {
       title: 'housegrilles',
       display: 'House Grilles',
-      thumbNail: HouseGrilles,
-      firstColor: 'red',
+      num: 4,
+      firstColor: '#e57673',
       secondColor: 'black',
-      height: '50px',
-      width: '50px'
+      height: '200px',
+      width: '200px'
     },
     {
       title: 'crispyeuchre',
       display: 'Crispy Euchre',
-      thumbNail: Jack,
-      firstColor: 'red',
+      num: 5,
+      firstColor: '#c481fb',
       secondColor: 'black',
-      height: '75px',
-      width: '35px'
+      height: '250px',
+      width: '165px'
     },
     {
       title: 'annenberghelper',
       display: 'Annenberg Helper',
-      thumbNail: Harvard,
-      firstColor: 'red',
+      num: 6,
+      firstColor: '#e8f38a',
       secondColor: 'black',
-      height: '50px',
-      width: '50px'
+      height: '200px',
+      width: '200px'
     }
   ]
 }

@@ -4,13 +4,13 @@ import { Flex } from 'grid-styled'
 
 export const Container = styled(Flex)`
   flex-direction: column;
-  height: 1343px;
+  height: 200vh;
   background-color: #92b4f2;
+  margin-top: -8px;
   margin-left: -8px;
   margin-right: -8px;
-  margin-top: -8px;
   padding-left: 0px;
-  padding-top: 41px;
+  padding-top: 45px;
   padding-right: 0px;
   justify-content: space-between;
   align-self: flex-end;
@@ -25,4 +25,10 @@ export const Container = styled(Flex)`
     padding-right: 0px;
     padding-bottom: 0px;
   }
+`
+
+export const Projects = styled(Flex)`
+  flex-direction: column;
+  height: 96%;
+  width: 100%;
 `

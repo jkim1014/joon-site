@@ -3,6 +3,6 @@ import styled from 'styled-components'
 import { Flex } from 'grid-styled'
 
 export const Container = styled(Flex)`
-  height: 50px;
-  background-color: 'white';
+  height: 100%;
+  width: 100%;
 `
