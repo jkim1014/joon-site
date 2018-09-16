@@ -63,6 +63,24 @@ export const NavItems = styled(Flex)`
   }
 `
 
+export const JoonLogo = styled.img`
+  padding-top: 2px;
+  align-self: center;
+  margin-left: 120px;
+  filter: invert(100%);
+  width: 100px;
+  height: 100px;
+  @media only screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.medium.floor}) {
+    width: 102.87px;
+    height: 26px;
+    padding-top: 0px;
+    margin-left: 20px;
+    padding-top: 0px;
+    margin-top: -15px;
+  }
+`
+
 export const Mobile = styled(Flex)`
   @media only screen and (min-width: ${({ theme }) =>
       theme.breakpoints.medium.ceiling}) {

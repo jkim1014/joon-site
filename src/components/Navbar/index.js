@@ -1,9 +1,17 @@
 /* eslint-disable react/jsx-curly-brace-presence */
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom'
+import { NavLink, withRouter } from 'react-router-dom'
 
 import HamburgerMenu from './components/Hamburger'
-import { Container, NavItem, NavItems, Wrapper, Mobile } from './styles'
+import {
+  Container,
+  JoonLogo,
+  NavItem,
+  NavItems,
+  Wrapper,
+  Mobile
+} from './styles'
+import Logo from '../../img/JoonLogo.png'
 // import theme from '../../theme'
 
 // const logoBreakpoint = parseInt(theme.breakpoints.medium.floor, 10)
@@ -48,6 +56,9 @@ class NavigationBar extends Component {
           <HamburgerMenu purple={this.props.purple} />
         </Mobile>
         <Container backCol={this.props.backCol}>
+          <NavLink to="/">
+            <JoonLogo src={Logo} alt="logo" />
+          </NavLink>
           <DesktopTabs />
         </Container>
       </Wrapper>
