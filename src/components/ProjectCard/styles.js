@@ -10,6 +10,9 @@ export const Container = styled(Flex)`
   width: 33.33%;
   height: 100%;
   background-color: ${props => props.firstColor};
+  &:hover {
+    opacity: 0.8;
+  }
 `
 
 const StyledNavLink = styled(NavLink)`
