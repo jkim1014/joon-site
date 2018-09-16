@@ -9,9 +9,7 @@ export const Container = styled(Flex)`
   margin-top: -8px;
   margin-left: -8px;
   margin-right: -8px;
-  padding-left: 0px;
   padding-top: 45px;
-  padding-right: 0px;
   justify-content: space-between;
   align-self: flex-end;
   @media only screen and (max-width: ${({ theme }) =>

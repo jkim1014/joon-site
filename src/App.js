@@ -38,7 +38,7 @@ class App extends Component {
               <View path="/project/housegrilles" component={HouseGrilles} />
               <View path="/project/hsatime" component={HsaTime} />
               <View path="/project/joyfull" component={Joyfull} />
-              <View path="/project/crsipyeuchre" component={CrispyEuchre} />
+              <View path="/project/crispyeuchre" component={CrispyEuchre} />
               <View
                 path="/project/annenberghelper"
                 component={AnnenbergHelper}

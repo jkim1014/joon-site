@@ -76,7 +76,7 @@ export default class Contact extends Component {
             <title>Contact</title>
             <meta
               name="description"
-              content="Send us a message and we'll get back to you ASAP"
+              content="Send me a message and we'll get back to you ASAP"
             />
           </Helmet>
           <LeftColumn>

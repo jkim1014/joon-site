@@ -10,7 +10,7 @@ class Home extends Component {
   render() {
     return (
       <Container>
-        <Navbar color="white" backCol="#92b4f2" />
+        <Navbar color="white" backCol="#92b4f2" invert="invert(100%)" />
         <Landing />
         <Projects>
           <Description />

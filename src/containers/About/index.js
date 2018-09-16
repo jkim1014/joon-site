@@ -1,8 +1,15 @@
 import React, { Component } from 'react'
+import Navbar from '../../components/Navbar'
+import { BigContainer, Container } from './styles'
 
 class About extends Component {
   render() {
-    return <div>About Page!</div>
+    return (
+      <BigContainer>
+        <Navbar backCol="white" />
+        <Container>About Me!</Container>
+      </BigContainer>
+    )
   }
 }
 

@@ -57,7 +57,7 @@ class NavigationBar extends Component {
         </Mobile>
         <Container backCol={this.props.backCol}>
           <NavLink to="/">
-            <JoonLogo src={Logo} alt="logo" />
+            <JoonLogo src={Logo} alt="logo" invert={this.props.invert} />
           </NavLink>
           <DesktopTabs />
         </Container>
