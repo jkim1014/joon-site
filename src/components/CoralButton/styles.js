@@ -11,9 +11,9 @@ export const StyledLink = styled(Link)`
 export const Done = styled(Flex)`
   height: 50px;
   width: ${props => props.width};
-  color: #ff6060;
+  color: #92b4f2;
   border-radius: 4px;
-  border: 1px solid #ff6060;
+  border: 1px solid #92b4f2;
   font-size: 16px;
   font-family: ${({ theme }) => theme.fonts.navLink.family};
   font-weight: ${({ theme }) => theme.fonts.navLink.weight};

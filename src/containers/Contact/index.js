@@ -9,7 +9,6 @@ import {
   RightColumn,
   Text,
   Heading,
-  SubHeading,
   Mailbox,
   DropDown,
   Input,
@@ -20,7 +19,7 @@ import {
 } from './styles'
 import mailbox from '../../img/mailbox.png'
 
-const EMAIL_URL = 'https://dev-mail-server.herokuapp.com/devsitev2/contact'
+const EMAIL_URL = 'https://joon-email-server.herokuapp.com/joonsite/contact'
 
 export default class Contact extends Component {
   state = {
@@ -82,7 +81,7 @@ export default class Contact extends Component {
           <LeftColumn>
             <Row>
               <Column>
-                <SubHeading>DON&#39;T BE SHY.</SubHeading>
+                {/* <SubHeading>DON&#39;T BE SHY.</SubHeading> */}
                 <Heading>HIT ME UP</Heading>
               </Column>
               <MailboxMobile src={mailbox} />

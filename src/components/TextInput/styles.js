@@ -28,7 +28,7 @@ export const TextArea = styled.textarea`
   font-family: ${({ theme }) => theme.fonts.title.family};
   font-weight: ${({ theme }) => theme.fonts.content.weight};
   font-size: 16px;
-  color: ${({ theme }) => theme.colors.fontPrimary};
+  color: ${({ theme }) => theme.colors.fontSecondary};
   border-width: 0px;
   outline-width: 0px;
   resize: none;
@@ -45,7 +45,7 @@ export const TextArea = styled.textarea`
 `
 export const Input = styled.input`
   font-size: 16px;
-  color: ${({ theme }) => theme.colors.fontPrimary};
+  color: ${({ theme }) => theme.colors.fontSecondary};
   font-family: ${({ theme }) => theme.fonts.title.family};
   font-weight: ${({ theme }) => theme.fonts.content.weight};
   width: 100%;
