@@ -87,8 +87,8 @@ export default class Contact extends Component {
               <MailboxMobile src={mailbox} />
             </Row>
             <Text>
-              Are you interested in working with me? Tell me about your idea or
-              project and I will be in touch right away.
+              Let&#39;s talk about anything. Shoot me an email and let's connect
+              soon!
             </Text>
             <Mailbox src={mailbox} />
           </LeftColumn>
