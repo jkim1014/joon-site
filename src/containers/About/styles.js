@@ -131,7 +131,7 @@ export const ImageContainer = styled(Flex)`
 `
 
 export const Image = styled.img`
-  width: 33%;
+  width: 33.33333333333333333%;
   height: 36%;
 `
 
