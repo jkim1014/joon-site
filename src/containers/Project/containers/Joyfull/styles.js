@@ -62,7 +62,10 @@ export const Technology = styled(Flex)`
   padding-bottom: 20px;
 `
 
-export const Image = styled.img``
+export const Image = styled.img`
+  width: 20%;
+  height: 80%;
+`
 
 export const ImageContainer = styled(Flex)`
   width: 100%;

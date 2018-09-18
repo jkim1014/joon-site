@@ -117,7 +117,7 @@ export const JoonLogo = styled.img`
   padding-top: 2px;
   margin-top: 18px;
   align-self: center;
-  margin-left: 120px;
+  margin-left: 20%;
   filter: ${props => props.invert};
   width: 80px;
   height: 80px;
