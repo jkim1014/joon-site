@@ -28,16 +28,7 @@ export const Container = styled(Flex)`
     padding-bottom: 0px;
   }
 `
-export const Logo = styled.img`
-  height: 19px;
-  width: 75px;
-  padding-bottom: 5px;
-  @media only screen and (max-width: ${({ theme }) =>
-      theme.breakpoints.mobile.floor}) {
-    height: 23px;
-    width: 94px;
-  }
-`
+
 export const Column = styled(Flex)`
   flex-direction: column;
   @media only screen and (max-width: ${({ theme }) =>
@@ -119,5 +110,24 @@ export const LabelMobile = styled(Flex)`
   @media only screen and (min-width: ${({ theme }) =>
       theme.breakpoints.mobile.ceiling}) {
     display: none;
+  }
+`
+
+export const JoonLogo = styled.img`
+  padding-top: 2px;
+  margin-top: 18px;
+  align-self: center;
+  margin-left: 120px;
+  filter: ${props => props.invert};
+  width: 80px;
+  height: 80px;
+  @media only screen and (max-width: ${({ theme }) =>
+      theme.breakpoints.medium.floor}) {
+    width: 102.87px;
+    height: 26px;
+    padding-top: 0px;
+    margin-left: 20px;
+    padding-top: 0px;
+    margin-top: -15px;
   }
 `

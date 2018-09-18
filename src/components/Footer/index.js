@@ -2,20 +2,24 @@ import React, { Component } from 'react'
 import {
   Container,
   Column,
-  Text,
   Row,
   TextLink,
   Label,
   RightColumn,
-  StyledExternalLink
+  StyledExternalLink,
+  JoonLogo
 } from './styles'
+import Logo from '../../img/JoonLogo.png'
+import { NavLink } from 'react-router-dom'
 
 class Footer extends Component {
   render() {
     return (
       <Container>
         <Column>
-          <Text>joon.young1014@gmail.com</Text>
+          <NavLink to="/">
+            <JoonLogo src={Logo} alt="logo" invert={this.props.invert} />
+          </NavLink>
         </Column>
         <RightColumn>
           <Row>
@@ -29,7 +33,7 @@ class Footer extends Component {
             <TextLink to="/about">About</TextLink>
             <TextLink to="/contact">Contact</TextLink>
           </Row>
-          <Label>© 2018 Joon Kim</Label>
+          <Label>Make from scratch by Joon Kim</Label>
         </RightColumn>
       </Container>
     )
