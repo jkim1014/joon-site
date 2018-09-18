@@ -10,6 +10,7 @@ import {
   ImageContainer,
   ImageContainerHeader
 } from './styles'
+import Helmet from 'react-helmet'
 import BackButton from '../../../../components/LinkButton'
 import Navbar from '../../../../components/Navbar'
 
@@ -18,6 +19,10 @@ class HouseGrilles extends Component {
     return (
       <BigContainer>
         <Navbar backCol="white" />
+        <Helmet>
+          <title>Grilles</title>
+          <meta name="description" content="Project!" />
+        </Helmet>
         <Container>
           <BackButton to="/" text="Back to Home/Projects" />
           <Header>House Grilles</Header>

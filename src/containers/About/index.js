@@ -20,6 +20,7 @@ import {
   Box
 } from './styles'
 import { SocialIcon } from 'react-social-icons'
+import Helmet from 'react-helmet'
 import pdf from '../../img/JYKResume.pdf'
 import one from '../../img/1.png'
 import two from '../../img/2.png'
@@ -34,6 +35,10 @@ class About extends Component {
       <BigContainer>
         <TopHeader>
           <Navbar color="white" backCol="#92b4f2" invert="invert(100%)" />
+          <Helmet>
+            <title>About</title>
+            <meta name="description" content="Get to know me!" />
+          </Helmet>
           <SmollContainer>
             <Discover>Discover who I am!</Discover>
             <Title>MY PASSIONS AND PERSONALITY</Title>
@@ -44,10 +49,9 @@ class About extends Component {
             <Title2>A few fun facts about me</Title2>
             <Content>
               I prefer a coldbrew over any hot coffee anyday, I like manchego
-              cheese, I&#39;ve spent half of my life in Korean and the other
-              half in America, Rubiks cubes are dope. Hotdogs are not
-              sandwiches, and I&#39;m currently en route to mastering the hackey
-              sack.
+              cheese, I&#39;ve spent half of my life in Korea and the other half
+              in America, Rubiks cubes are dope. Hotdogs are not sandwiches, and
+              I&#39;m currently en route to mastering the hackey sack.
             </Content>
           </FunFacts>
           <ImageContainer>

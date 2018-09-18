@@ -64,8 +64,18 @@ export const Technology = styled(Flex)`
 
 export const Image = styled.img``
 
-export const ImageContainer = styled(Flex)``
+export const ImageContainer = styled(Flex)`
+  width: 100%;
+  justify-content: space-evenly;
+  padding-bottom: 30px;
+  padding-top: 30px;
+`
 
-export const ImageCaption = styled(Flex)``
-
-export const ImageContainerHeader = styled(Flex)``
+export const ImageContainerHeader = styled(Flex)`
+  color: #6f6f6f;
+  align-self: center;
+  padding: 30px;
+  font-family: ${({ theme }) => theme.fonts.header.family};
+  font-weight: ${({ theme }) => theme.fonts.header.weight};
+  font-size: 12px;
+`

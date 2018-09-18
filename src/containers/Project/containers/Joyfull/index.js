@@ -8,16 +8,34 @@ import {
   Role,
   Technology,
   ImageContainer,
+  Image,
   ImageContainerHeader
 } from './styles'
+import Helmet from 'react-helmet'
 import BackButton from '../../../../components/LinkButton'
 import Navbar from '../../../../components/Navbar'
+import j1 from './img/j1.png'
+import j2 from './img/j2.png'
+import j3 from './img/j3.png'
+import j4 from './img/j4.png'
+import j5 from './img/j5.png'
+import j6 from './img/j6.png'
+import j7 from './img/j7.png'
+import j8 from './img/j8.png'
+import j9 from './img/j9.png'
+import j10 from './img/j10.png'
+import j11 from './img/j11.png'
+import j12 from './img/j12.png'
 
 class Joyfull extends Component {
   render() {
     return (
       <BigContainer>
         <Navbar backCol="white" />
+        <Helmet>
+          <title>Joyfull</title>
+          <meta name="description" content="Project!" />
+        </Helmet>
         <Container>
           <BackButton to="/" text="Back to Home/Projects" />
           <Header>Joyfull</Header>
@@ -34,6 +52,15 @@ class Joyfull extends Component {
             easy as clicking a few buttons. I was absolutely thrilled to
             commence work on engineering fronts.
           </BodyText>
+          <ImageContainerHeader>
+            Here is an exmaple of a user flow for &#39;Creating&#39; a campaign
+          </ImageContainerHeader>
+          <ImageContainer>
+            <Image src={j9} />
+            <Image src={j10} />
+            <Image src={j11} />
+            <Image src={j12} />
+          </ImageContainer>
           <Role>Role</Role>
           <SubHeading>Backend</SubHeading>
           <BodyText>
@@ -66,6 +93,15 @@ class Joyfull extends Component {
             implemented; especially more so as the end product was to a
             mobile-optimized web application.
           </BodyText>
+          <ImageContainerHeader>
+            Here is an exmaple of a user flow for &#39;Managing&#39; a campaign
+          </ImageContainerHeader>
+          <ImageContainer>
+            <Image src={j5} />
+            <Image src={j6} />
+            <Image src={j7} />
+            <Image src={j8} />
+          </ImageContainer>
           <Technology>Technology</Technology>
           <SubHeading>Backend</SubHeading>
           <BodyText>1. PostgreSQL</BodyText>
@@ -78,8 +114,15 @@ class Joyfull extends Component {
           <BodyText>2. Redux</BodyText>
           <BodyText>3. Apollo Client</BodyText>
           <BodyText>4. Styled-Components.js</BodyText>
-          <ImageContainerHeader>Header</ImageContainerHeader>
-          <ImageContainer />
+          <ImageContainerHeader>
+            Here are examples of a user flow for &#39;Giving&#39; to a campaign
+          </ImageContainerHeader>
+          <ImageContainer>
+            <Image src={j1} />
+            <Image src={j2} />
+            <Image src={j3} />
+            <Image src={j4} />
+          </ImageContainer>
           <BodyText>
             I continued to help build and manage this project through its
             completion, guiding major development decisions and priorities
