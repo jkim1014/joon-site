@@ -15,6 +15,7 @@ export const Container = styled(Flex)`
   padding-top: 100px;
   padding-left: 7%;
   padding-right: 7%;
+  padding-bottom: 5%;
 `
 
 export const Header = styled(Flex)`
@@ -22,6 +23,8 @@ export const Header = styled(Flex)`
   font-family: ${({ theme }) => theme.fonts.header.family};
   font-weight: ${({ theme }) => theme.fonts.header.weight};
   font-size: 75px;
+  padding-bottom: 50px;
+  padding-top: 40px;
 `
 
 export const SubHeading = styled(Flex)`
@@ -29,6 +32,8 @@ export const SubHeading = styled(Flex)`
   font-family: ${({ theme }) => theme.fonts.title.family};
   font-weight: ${({ theme }) => theme.fonts.title.weight};
   font-size: 30px;
+  padding-bottom: 20px;
+  padding-top: 20px;
 `
 
 export const BodyText = styled(Flex)`
@@ -36,6 +41,7 @@ export const BodyText = styled(Flex)`
   font-family: ${({ theme }) => theme.fonts.content.family};
   font-weight: ${({ theme }) => theme.fonts.content.weight};
   font-size: 16px;
+  line-height: 40px;
 `
 
 export const Role = styled(Flex)`
@@ -43,6 +49,8 @@ export const Role = styled(Flex)`
   font-family: ${({ theme }) => theme.fonts.header.family};
   font-weight: ${({ theme }) => theme.fonts.header.weight};
   font-size: 45px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 `
 
 export const Technology = styled(Flex)`
@@ -50,6 +58,8 @@ export const Technology = styled(Flex)`
   font-family: ${({ theme }) => theme.fonts.header.family};
   font-weight: ${({ theme }) => theme.fonts.header.weight};
   font-size: 45px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 `
 
 export const Image = styled.img``

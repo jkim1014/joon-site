@@ -36,13 +36,56 @@ class Joyfull extends Component {
           </BodyText>
           <Role>Role</Role>
           <SubHeading>Backend</SubHeading>
-          <BodyText />
+          <BodyText>
+            To kickoff the engineering process, I received the designs created
+            by the clients, took note of all the features. I then analyzed what
+            types of data must be stored and which data models were necessary.
+            It was clear that the most important exchange of data occurred
+            between
+          </BodyText>
+          <BodyText>1. Users</BodyText>
+          <BodyText>2. Campaigns</BodyText>
+          <BodyText>3. Gifts.</BodyText>
+          <BodyText>
+            Everything else heavily depended on the accuracy, capability, and
+            flexibility of these three main models. For example, home cooked
+            meals and flowers fell under gifts. We also had to consider which
+            payment and emailing APIs were best suited for the scale of Joyfull
+            - Stripe and Mailgun APIs were deemed accurate and appealing to use
+            for this project.
+          </BodyText>
           <SubHeading>Frontend</SubHeading>
-          <BodyText />
+          <BodyText>
+            To practice agile development practices to develop efficiently and
+            productively, the frontend development started before backened
+            development was finished. As a team of three consisting of two other
+            developers on the frontend and me, we put our emphasis on using
+            redux properly to pass down local storage information through
+            various routes easily as well as on making sure that the designs
+            handed off to us by the clients were properly and accurately
+            implemented; especially more so as the end product was to a
+            mobile-optimized web application.
+          </BodyText>
           <Technology>Technology</Technology>
+          <SubHeading>Backend</SubHeading>
+          <BodyText>1. PostgreSQL</BodyText>
+          <BodyText>2. Node.js</BodyText>
+          <BodyText>3. Express</BodyText>
+          <BodyText>4. GraphQL</BodyText>
+          <BodyText>5. Objection.js / Knex.js</BodyText>
+          <SubHeading>Frontend</SubHeading>
+          <BodyText>1. React</BodyText>
+          <BodyText>2. Redux</BodyText>
+          <BodyText>3. Apollo Client</BodyText>
+          <BodyText>4. Styled-Components.js</BodyText>
           <ImageContainerHeader>Header</ImageContainerHeader>
           <ImageContainer />
-          <BodyText />
+          <BodyText>
+            I continued to help build and manage this project through its
+            completion, guiding major development decisions and priorities
+            around earlier user insights. The project was handed over to the
+            clients late September of 2018.
+          </BodyText>
         </Container>
       </BigContainer>
     )
