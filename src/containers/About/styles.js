@@ -6,10 +6,11 @@ export const BigContainer = styled(Flex)`
   justify-content: center;
   align-items: center;
   margin-top: -8px;
+  margin-bottom: -5%;
 `
 
 export const Container = styled(Flex)`
-  height: 150vh;
+  height: 100%;
   @media only screen and (min-width: ${({ theme }) =>
       theme.breakpoints.small.ceiling}) {
     padding-bottom: 100px;
@@ -124,9 +125,15 @@ export const FunFacts = styled(Flex)`
   padding-top: 5vh;
 `
 
-export const ImageContainer = styled(Flex)``
+export const ImageContainer = styled(Flex)`
+  width: 100%;
+  height: 100%;
+`
 
-export const Image = styled.img``
+export const Image = styled.img`
+  width: 33%;
+  height: 36%;
+`
 
 export const WhatI = styled(Flex)`
   flex-direction: column;

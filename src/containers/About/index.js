@@ -21,6 +21,12 @@ import {
 } from './styles'
 import { SocialIcon } from 'react-social-icons'
 import pdf from '../../img/JYKResume.pdf'
+import one from '../../img/1.png'
+import two from '../../img/2.png'
+import three from '../../img/3.png'
+import four from '../../img/4.png'
+import five from '../../img/5.png'
+import six from '../../img/6.png'
 
 class About extends Component {
   render() {
@@ -45,12 +51,14 @@ class About extends Component {
             </Content>
           </FunFacts>
           <ImageContainer>
-            <Image />
-            <Image />
-            <Image />
-            <Image />
-            <Image />
-            <Image />
+            <Image src={five} />
+            <Image src={four} />
+            <Image src={six} />
+          </ImageContainer>
+          <ImageContainer>
+            <Image src={one} />
+            <Image src={three} />
+            <Image src={two} />
           </ImageContainer>
           <WhatI>
             <Title2>Understand who I am as a person</Title2>
