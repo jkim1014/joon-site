@@ -20,7 +20,7 @@ export const Button = styled(Flex)`
   }
 `
 export const Text = styled(Flex)`
-  color: #ff6060;
+  color: black;
   font-family: ${({ theme }) => theme.fonts.title.family};
   font-weight: ${({ theme }) => theme.fonts.title.weight};
   font-size: 18px;

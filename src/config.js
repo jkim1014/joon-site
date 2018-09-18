@@ -4,7 +4,7 @@ export default {
       title: 'joyfull',
       display: 'Joyfull',
       num: 1,
-      firstColor: '#57bfa7',
+      firstColor: '#202764',
       secondColor: 'black',
       height: '90px',
       width: '370px'
@@ -22,7 +22,7 @@ export default {
       title: 'pineapplepair',
       display: 'Pineapple Pair',
       num: 3,
-      firstColor: '#2d406c',
+      firstColor: '#b5e0d5',
       secondColor: 'black',
       height: '200px',
       width: '200px'
@@ -51,7 +51,7 @@ export default {
       title: 'annenberghelper',
       display: 'Annenberg Helper',
       num: 6,
-      firstColor: '#e8f38a',
+      firstColor: 'black',
       secondColor: 'black',
       height: '200px',
       width: '200px'
