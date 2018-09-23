@@ -4,6 +4,7 @@ import {
   Header,
   BigContainer,
   BodyText,
+  BodyLink,
   LeftArrow,
   LeftArrowCapt,
   RightArrow,
@@ -35,26 +36,29 @@ class CrispyEuchre extends Component {
           <BackButton to="/" text="Back to Home/Projects" />
           <Header>Crispy Euchre</Header>
           <BodyText>
-            In July 2018, DEV, the development agency of Harvard Student
-            Agencies, was approached by a team of two hoping to launch a
-            platform to spread the joy of giving and sharing food. The team
-            introduced the idea of Joyfull: a two-way platform through which
-            &#34;promoters&#34; could create meal-campaigns to which
-            &#34;patrons&#34; could donate meals, flowers, and money for pre-set
-            meals to. Derived from one of the founders&#39; story of wanting to
-            create a GoFundMe of meals to support his sister, the team of two
-            wanted an application which could make the action of giving food as
-            easy as clicking a few buttons. I was absolutely thrilled to
-            commence work on engineering fronts.
+            Euchre has been my house favorite when it comes to card games. It
+            promotes teamwork, a bit of game theory, and oodles of combinations
+            for strategy plays. So there came about a time when I thought why
+            don&#39;t I make a variation of the game myself? Euchre is a game
+            with four players, but it&#39;s not always the case that I three
+            other friends readily availble. Oh yea, and let me also code up
+            robots that play optimally.
+          </BodyText>
+          <BodyText>
+            The regular set of rules of Euchre can be a pretty long list, so
+            I&#39;ll link them here:
+            <BodyLink href="https://cardgames.io/euchre/" target="_blank">
+              HERE
+            </BodyLink>
           </BodyText>
           <LeftArrow
             src={LArrow}
-            onClick={() => this.props.history.push('/project/pineapplepair')}
+            onClick={() => this.props.history.push('/project/housegrilles')}
           />
           <LeftArrowCapt>Previous</LeftArrowCapt>
           <RightArrow
             src={RArrow}
-            onClick={() => this.props.history.push('/project/crispyeuchre')}
+            onClick={() => this.props.history.push('/project/annenberghelper')}
           />
           <RightArrowCapt>Next</RightArrowCapt>
           <Technology>Technology</Technology>

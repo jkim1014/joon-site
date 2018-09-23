@@ -1,20 +1,27 @@
 import React, { Component } from 'react'
+import ReactPlayer from 'react-player'
 import {
   Container,
   Header,
-  SubHeading,
   BigContainer,
   BodyText,
   Role,
   Technology,
   ImageContainer,
-  ImageContainerHeader
+  ImageContainerHeader,
+  LeftArrow,
+  LeftArrowCapt
 } from './styles'
 import Helmet from 'react-helmet'
 import BackButton from '../../../../components/LinkButton'
 import Navbar from '../../../../components/Navbar'
+import LArrow from '../../../../img/LeftArrow.png'
 
 class AnnenbergHelper extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     return (
       <BigContainer>
@@ -27,25 +34,54 @@ class AnnenbergHelper extends Component {
           <BackButton to="/" text="Back to Home/Projects" />
           <Header>Annenberg Helper</Header>
           <BodyText>
-            In July 2018, DEV, the development agency of Harvard Student
-            Agencies, was approached by a team of two hoping to launch a
-            platform to spread the joy of giving and sharing food. The team
-            introduced the idea of Joyfull: a two-way platform through which
-            &#34;promoters&#34; could create meal-campaigns to which
-            &#34;patrons&#34; could donate meals, flowers, and money for pre-set
-            meals to. Derived from one of the founders&#39; story of wanting to
-            create a GoFundMe of meals to support his sister, the team of two
-            wanted an application which could make the action of giving food as
-            easy as clicking a few buttons. I was absolutely thrilled to
-            commence work on engineering fronts.
+            As a final project for CS50, Harvard&#39;s introduction to CS class,
+            my two friends and I got together and sought to solve a common
+            problem college freshmen ran into on a daily basis.
           </BodyText>
-          <Role>Role</Role>
-          <SubHeading>Backend</SubHeading>
-          <BodyText />
-          <SubHeading>Frontend</SubHeading>
-          <BodyText />
+          <BodyText>
+            1. Knowing the location of the table at which your friends are
+            sitting at
+          </BodyText>
+          <BodyText>
+            2. Eating the right nutritions and stay healthy during busy hours in
+            between classes, homework, and activities
+          </BodyText>
+          <LeftArrow
+            src={LArrow}
+            onClick={() => this.props.history.push('/project/crispyeuchre')}
+          />
+          <LeftArrowCapt>Previous</LeftArrowCapt>
+          <Role>Tasks</Role>
+          <BodyText>
+            The main tasks we had remaining after finishing the concept of the
+            project were as follows:
+          </BodyText>
+          <BodyText>
+            1. Building an html webscraper that scrapes the menu and the
+            nutrition of each food item on the menu every meal
+          </BodyText>
+          <BodyText>2. Populating database with those items each meal</BodyText>
+          <BodyText>
+            3. Building out a basic frontend for some user interaction and easy
+            usage
+          </BodyText>
+          <ImageContainerHeader>
+            Here is a video explaining each page of the application and its
+            functionalities!
+          </ImageContainerHeader>
+          <ImageContainer>
+            <ReactPlayer
+              url="https://youtu.be/dwLyAt8b3DI"
+              controls
+              width="100%"
+              height="100%"
+            />
+          </ImageContainer>
           <Technology>Technology</Technology>
-          <ImageContainerHeader>Header</ImageContainerHeader>
+          <BodyText>1. Python Flask</BodyText>
+          <BodyText>2. Python Beautiful Soup</BodyText>
+          <BodyText>3. Python Jinja</BodyText>
+          <BodyText>4. SQL</BodyText>
           <ImageContainer />
           <BodyText />
         </Container>

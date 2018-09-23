@@ -7,6 +7,7 @@ export const BigContainer = styled(Flex)`
   align-items: flex-start;
   padding-top: 36px;
   margin-left: -7px;
+  margin-bottom: 9.05%;
 `
 
 export const Container = styled(Flex)`
@@ -86,6 +87,14 @@ export const BodyText = styled(Flex)`
   line-height: 40px;
 `
 
+export const BodyLink = styled.a`
+  color: black;
+  font-family: ${({ theme }) => theme.fonts.content.family};
+  font-weight: ${({ theme }) => theme.fonts.content.weight};
+  font-size: 16px;
+  line-height: 40px;
+`
+
 export const Role = styled(Flex)`
   color: #2e57a1;
   font-family: ${({ theme }) => theme.fonts.header.family};
@@ -105,7 +114,7 @@ export const Technology = styled(Flex)`
 `
 
 export const Image = styled.img`
-  width: 20%;
+  width: 80%;
   height: 80%;
 `
 
