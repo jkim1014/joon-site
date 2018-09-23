@@ -15,10 +15,11 @@ export const BigContainer = styled(Flex)`
 export const Container = styled(Flex)`
   @media only screen and (min-width: ${({ theme }) =>
       theme.breakpoints.small.ceiling}) {
-    padding-left: 148px;
+    padding-left: 5%;
+    width: 100%;
     padding-top: 200px;
     padding-bottom: 162px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: row;
   }
   @media only screen and (max-width: ${({ theme }) =>

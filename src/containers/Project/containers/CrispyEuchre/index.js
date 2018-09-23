@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 import {
   Container,
   Header,
-  SubHeading,
   BigContainer,
   BodyText,
-  Role,
+  LeftArrow,
+  LeftArrowCapt,
+  RightArrow,
+  RightArrowCapt,
   Technology,
   ImageContainer,
   ImageContainerHeader
@@ -13,8 +15,14 @@ import {
 import Helmet from 'react-helmet'
 import BackButton from '../../../../components/LinkButton'
 import Navbar from '../../../../components/Navbar'
+import RArrow from '../../../../img/RightArrow.png'
+import LArrow from '../../../../img/LeftArrow.png'
 
 class CrispyEuchre extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     return (
       <BigContainer>
@@ -39,13 +47,19 @@ class CrispyEuchre extends Component {
             easy as clicking a few buttons. I was absolutely thrilled to
             commence work on engineering fronts.
           </BodyText>
-          <Role>Role</Role>
-          <SubHeading>Backend</SubHeading>
-          <BodyText />
-          <SubHeading>Frontend</SubHeading>
-          <BodyText />
+          <LeftArrow
+            src={LArrow}
+            onClick={() => this.props.history.push('/project/pineapplepair')}
+          />
+          <LeftArrowCapt>Previous</LeftArrowCapt>
+          <RightArrow
+            src={RArrow}
+            onClick={() => this.props.history.push('/project/crispyeuchre')}
+          />
+          <RightArrowCapt>Next</RightArrowCapt>
           <Technology>Technology</Technology>
-          <ImageContainerHeader>Header</ImageContainerHeader>
+          <BodyText>Pretty much only python :p</BodyText>
+          <ImageContainerHeader>Examples</ImageContainerHeader>
           <ImageContainer />
           <BodyText />
         </Container>

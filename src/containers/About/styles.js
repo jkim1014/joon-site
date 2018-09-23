@@ -6,7 +6,7 @@ export const BigContainer = styled(Flex)`
   justify-content: center;
   align-items: center;
   margin-top: -8px;
-  margin-bottom: -5%;
+  margin-bottom: -7%;
 `
 
 export const Container = styled(Flex)`
@@ -49,7 +49,7 @@ export const Title2 = styled(Flex)`
   font-family: ${({ theme }) => theme.fonts.title.family};
   font-weight: ${({ theme }) => theme.fonts.title.weight};
   font-style: bold;
-  font-size: 40px;
+  font-size: 200%;
   margin-bottom: 70px;
 `
 
@@ -76,7 +76,7 @@ export const Content = styled(Flex)`
   color: #6f6f6f;
   font-family: ${({ theme }) => theme.fonts.content.family};
   font-weight: ${({ theme }) => theme.fonts.content.weight};
-  font-size: 24px;
+  font-size: 120%;
   text-align: center;
   margin-bottom: 50px;
   padding-left: 33%;
@@ -101,7 +101,6 @@ export const TopHeader = styled(Flex)`
   margin-right: -8px;
   padding-top: 45px;
   justify-content: space-between;
-  align-self: flex-end;
   @media only screen and (max-width: ${({ theme }) =>
       theme.breakpoints.mobile.floor}) {
     width: 100%;
@@ -175,5 +174,5 @@ export const Resume = styled.a`
 
 export const Follow = styled(Flex)`
   justify-content: space-between;
-  width: 10%;
+  width: 20%;
 `

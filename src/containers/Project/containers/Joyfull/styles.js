@@ -13,9 +13,30 @@ export const Container = styled(Flex)`
   flex-direction: column;
   align-items: flex-start;
   padding-top: 100px;
-  padding-left: 7%;
-  padding-right: 7%;
+  width: 90%;
+  padding-left: 15%;
+  padding-right: 5%;
   padding-bottom: 5%;
+`
+
+export const RightArrow = styled.img`
+  position: fixed;
+  width: 4%;
+  height: 8%;
+  right: 3vw;
+  top: 40vh;
+  &:hover {
+    opacity: 0.8;
+  }
+`
+
+export const ArrowCapt = styled(Flex)`
+  position: fixed;
+  font-family: ${({ theme }) => theme.fonts.content.family};
+  font-weight: ${({ theme }) => theme.fonts.content.weight};
+  font-size: 100%;
+  right: 4.5vw;
+  top: 48vh;
 `
 
 export const Header = styled(Flex)`

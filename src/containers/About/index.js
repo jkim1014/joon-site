@@ -82,7 +82,7 @@ class About extends Component {
             <Line />
             <Title2>What I&#39;ve done and what I can do</Title2>
             <Writing>
-              Feel free to checkout a few other things I&#39;ve done over the
+              Feel free to check out a few other things I&#39;ve done over the
               years and what if I&#39;m able to help you solve your problem. My
               resume goes over the standard items, but please understand that I
               don&#39;t embellish my capabilities (no good ever comes out of

@@ -9,7 +9,9 @@ import {
   Technology,
   ImageContainer,
   Image,
-  ImageContainerHeader
+  ImageContainerHeader,
+  RightArrow,
+  ArrowCapt
 } from './styles'
 import Helmet from 'react-helmet'
 import BackButton from '../../../../components/LinkButton'
@@ -26,8 +28,13 @@ import j9 from './img/j9.png'
 import j10 from './img/j10.png'
 import j11 from './img/j11.png'
 import j12 from './img/j12.png'
+import Arrow from '../../../../img/RightArrow.png'
 
 class Joyfull extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
     return (
       <BigContainer>
@@ -52,6 +59,11 @@ class Joyfull extends Component {
             easy as clicking a few buttons. I was absolutely thrilled to
             commence work on engineering fronts.
           </BodyText>
+          <RightArrow
+            src={Arrow}
+            onClick={() => this.props.history.push('/project/hsatime')}
+          />
+          <ArrowCapt>Next</ArrowCapt>
           <ImageContainerHeader>
             Here is an exmaple of a user flow for &#39;Creating&#39; a campaign
           </ImageContainerHeader>
