@@ -7,7 +7,7 @@ class Description extends Component {
       <Container>
         <Header>
           {
-            "Hi, I'm Joon Kim - a Cambridge based (born in Korea, raised in Miami) software engineer and former baby."
+            'a Cambridge based (born in Korea, raised in Miami) software developer, jazz music enthusiast, and former baby.'
           }
         </Header>
       </Container>

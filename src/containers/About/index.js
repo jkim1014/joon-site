@@ -40,13 +40,13 @@ class About extends Component {
             <meta name="description" content="Get to know me!" />
           </Helmet>
           <SmollContainer>
-            <Discover>Discover who I am!</Discover>
+            <Discover>Discover who I am, along with</Discover>
             <Title>MY PASSIONS AND PERSONALITY</Title>
           </SmollContainer>
         </TopHeader>
         <Container>
           <FunFacts>
-            <Title2>A few fun facts about me</Title2>
+            <Title2>Fun facts!</Title2>
             <Content>
               I prefer a coldbrew over any hot coffee anyday, I like manchego
               cheese, I&#39;ve spent half of my life in Korea and the other half
@@ -65,28 +65,28 @@ class About extends Component {
             <Image src={two} />
           </ImageContainer>
           <WhatI>
-            <Title2>Understand who I am as a person</Title2>
+            <Title2>Who I am as a person</Title2>
             <Writing>
               I like making cool stuff. Recently, I have dabbled in Javscript
-              full-stack development. During the warmer months, I enjoy hitting
-              the sweet spot of my gold club and waiting for breezy days to sail
-              on the waters with. I am a passionate musician and a music
-              listener which has had a huge impact throughout my life, but
-              that&#39;s a story for another time. I&#39;m all about making
-              things to solve problems relevant to the people close to me and to
-              those who need solutions. I may not have the solutions to all the
-              problems, but you better be damn sure I&#39;ll try my hardest.
-              Bottom line: I love what I do and I love hearing what you have to
-              say. :)
+              full-stack development. Off my coding chair, I enjoy hitting the
+              sweet spot of my gold club and waiting for breezy days to sail on
+              the waters with. I am a passionate musician and a music listener
+              which has had a huge impact throughout my life. I&#39;m all about
+              making things to solve problems relevant to the people close to me
+              and to those who need solutions. I may not have the solutions to
+              all the problems, but you better be damn sure I&#39;ll try my
+              hardest. Bottom line: I love what I do and I love hearing what you
+              have to say. :)
             </Writing>
             <Line />
-            <Title2>What I&#39;ve done and what I can do</Title2>
+            <Title2>Things I&#39;ve done and knowledge I&#39;ve amassed</Title2>
             <Writing>
-              Feel free to check out a few other things I&#39;ve done over the
-              years and what if I&#39;m able to help you solve your problem. My
-              resume goes over the standard items, but please understand that I
-              don&#39;t embellish my capabilities (no good ever comes out of
-              that).
+              Here&#39;s a short list of what I&#39;ve done, learned, and
+              stumbled upon over last few years. I&#39;m genuinely grateful for
+              the experiences I&#39;ve had and to the people who made them
+              possible. So let me know if I&#39;m able to help you solve a
+              problem on your mind! Shoot me an email. If not, still shoot me an
+              email, let&#39;s connect!
             </Writing>
             <Box>
               <Resume href={pdf}>Resume</Resume>

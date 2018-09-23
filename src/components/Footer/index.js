@@ -33,7 +33,7 @@ class Footer extends Component {
             <TextLink to="/about">About</TextLink>
             <TextLink to="/contact">Contact</TextLink>
           </Row>
-          <Label>Make from scratch by Joon Kim</Label>
+          <Label>Make from scratch using React by Joon Kim</Label>
         </RightColumn>
       </Container>
     )

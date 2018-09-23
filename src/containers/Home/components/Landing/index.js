@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
-import { Background, Container, Header } from './styles'
+import { Background, Container, Header, SubHeader, Left } from './styles'
+import MySketch from '../../../../img/Sketch.png'
 
 class Landing extends Component {
   render() {
     return (
       <Container>
-        <Background />
-        <Header>{'Here is some cool sh*t >:)'}</Header>
+        <Background src={MySketch} />
+        <Left>
+          <Header>Hey, I&#39;m</Header>
+          <SubHeader>- Joon Kim -</SubHeader>
+        </Left>
       </Container>
     )
   }
