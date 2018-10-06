@@ -4,17 +4,16 @@ import { NavLink } from 'react-router-dom'
 import React from 'react'
 
 export const StyledNavLink = styled(NavLink)`
-  font-family: 'Rams Black';
-  font-size: 20px;
-  line-height: 28px;
-  color: ${({ theme }) => theme.colors.fontPrimary};
+  font-family: ${({ theme }) => theme.fonts.navLink.family};
+  font-weight: ${({ theme }) => theme.fonts.navLink.weight};
+  font-size: 3vh;
+  line-height: 6vh;
+  color: 'black';
   &:hover {
     color: ${({ theme }) => theme.colors.tertiary};
   }
   /* Home shouldn't have underline */
-  &.active {
-    color: ${({ theme, to }) => (to === '/' ? '' : theme.colors.tertiary)};
-  }
+
   padding-top: 22px;
   text-decoration: none;
 `

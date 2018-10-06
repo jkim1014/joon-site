@@ -6,7 +6,7 @@ export const BigContainer = styled(Flex)`
   justify-content: center;
   align-items: center;
   margin-top: -8px;
-  margin-bottom: -7%;
+  margin-bottom: -10%;
 `
 
 export const Container = styled(Flex)`
@@ -82,6 +82,7 @@ export const Content = styled(Flex)`
   padding-left: 33%;
   padding-right: 33%;
   line-height: 48px;
+  height: 100%;
 `
 
 export const Discover = styled(Flex)`
@@ -118,7 +119,7 @@ export const FunFacts = styled(Flex)`
   background-color: #f3f3f3;
   flex-direction: column;
   align-items: center;
-  height: 50vh;
+  height: 100%;
   width: 100vw;
   justify-content: center;
   padding-top: 5vh;

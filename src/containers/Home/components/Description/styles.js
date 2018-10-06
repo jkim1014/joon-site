@@ -13,7 +13,7 @@ export const Header = styled(Flex)`
   font-family: ${({ theme }) => theme.fonts.header.family};
   font-weight: ${({ theme }) => theme.fonts.header.weight};
   text-align: center;
-  font-size: 200%;
+  font-size: 4vh;
   letter-spacing: 0.6px;
   margin-left: 10%;
   margin-right: 10%;

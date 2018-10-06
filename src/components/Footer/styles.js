@@ -119,12 +119,12 @@ export const JoonLogo = styled.img`
   align-self: center;
   margin-left: 20%;
   filter: ${props => props.invert};
-  width: 80px;
-  height: 80px;
+  width: 10vh;
+  height: 10vh;
   @media only screen and (max-width: ${({ theme }) =>
       theme.breakpoints.medium.floor}) {
-    width: 102.87px;
-    height: 26px;
+    width: 35px;
+    height: 35px;
     padding-top: 0px;
     margin-left: 20px;
     padding-top: 0px;

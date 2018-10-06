@@ -7,7 +7,7 @@ class Description extends Component {
       <Container>
         <Header>
           {
-            'a Cambridge based (born in Korea, raised in Miami) software developer, jazz music enthusiast, and former baby.'
+            'A Cambridge based (born in Korea, raised in Miami) software developer and a jazz music enthusiast. I am looking to make this world a more beautiful place.'
           }
         </Header>
       </Container>

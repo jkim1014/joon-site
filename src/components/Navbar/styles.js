@@ -14,11 +14,11 @@ export const Wrapper = styled(Flex)`
   width: 100%;
   height: 50px;
   margin-top: 10px;
-  @media only screen and (max-width: ${({ theme }) =>
-      theme.breakpoints.medium.floor}) {
+  /* @media only screen and (max-width: ${({ theme }) =>
+    theme.breakpoints.medium.floor}) {
     position: absolute;
-    margin-top: 20px;
-  }
+    margin-top: 10px;
+  } */
 `
 export const Picture = styled.img`
   width: 15px;
@@ -57,10 +57,10 @@ export const NavItems = styled(Flex)`
   justify-content: flex-end;
   width: 80%;
   align-self: right;
-  @media only screen and (max-width: ${({ theme }) =>
-      theme.breakpoints.medium.floor}) {
+  /* @media only screen and (max-width: ${({ theme }) =>
+    theme.breakpoints.medium.floor}) {
     display: none;
-  }
+  } */
 `
 
 export const JoonLogo = styled.img`
@@ -68,22 +68,22 @@ export const JoonLogo = styled.img`
   align-self: center;
   margin-left: 120px;
   filter: ${props => props.invert};
-  width: 100px;
-  height: 100px;
-  @media only screen and (max-width: ${({ theme }) =>
-      theme.breakpoints.medium.floor}) {
-    width: 102.87px;
+  width: 10vh;
+  height: 10vh;
+  /* @media only screen and (max-width: ${({ theme }) =>
+    theme.breakpoints.medium.floor}) {
+    width: 26px;
     height: 26px;
     padding-top: 0px;
     margin-left: 20px;
     padding-top: 0px;
     margin-top: -15px;
-  }
+  } */
 `
 
 export const Mobile = styled(Flex)`
-  @media only screen and (min-width: ${({ theme }) =>
-      theme.breakpoints.medium.ceiling}) {
+  /* @media only screen and (min-width: ${({ theme }) =>
+    theme.breakpoints.medium.ceiling}) {
     display: none;
-  }
+  } */
 `

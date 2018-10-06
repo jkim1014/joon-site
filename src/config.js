@@ -6,8 +6,8 @@ export default {
       num: 1,
       firstColor: '#202764',
       secondColor: 'black',
-      height: '90px',
-      width: '370px'
+      height: '9vh',
+      width: '37vh'
     },
     {
       title: 'hsatime',
@@ -15,8 +15,8 @@ export default {
       num: 2,
       firstColor: 'grey',
       secondColor: 'black',
-      height: '130px',
-      width: '300px'
+      height: '13vh',
+      width: '30vh'
     },
     {
       title: 'pineapplepair',
@@ -24,8 +24,8 @@ export default {
       num: 3,
       firstColor: '#b5e0d5',
       secondColor: 'black',
-      height: '200px',
-      width: '200px'
+      height: '20vh',
+      width: '20vh'
     }
   ],
   projects2: [
@@ -35,8 +35,8 @@ export default {
       num: 4,
       firstColor: '#e57673',
       secondColor: 'black',
-      height: '200px',
-      width: '200px'
+      height: '20vh',
+      width: '20vh'
     },
     {
       title: 'crispyeuchre',
@@ -44,8 +44,8 @@ export default {
       num: 5,
       firstColor: '#c481fb',
       secondColor: 'black',
-      height: '250px',
-      width: '165px'
+      height: '25vh',
+      width: '16.5vh'
     },
     {
       title: 'annenberghelper',
@@ -53,8 +53,8 @@ export default {
       num: 6,
       firstColor: 'black',
       secondColor: 'black',
-      height: '200px',
-      width: '200px'
+      height: '20vh',
+      width: '20vh'
     }
   ]
 }

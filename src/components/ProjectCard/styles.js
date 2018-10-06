@@ -18,7 +18,7 @@ export const Container = styled(Flex)`
 const StyledNavLink = styled(NavLink)`
   font-family: ${({ theme }) => theme.fonts.header.family};
   font-weight: ${({ theme }) => theme.fonts.header.weight};
-  font-size: 35px;
+  font-size: 150%;
   letter-spacing: 0.6px;
   text-align: center;
   &:hover {

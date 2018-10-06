@@ -12,8 +12,7 @@ export const Container = styled(Flex)`
 
 export const Background = styled.img`
   border-radius: 0;
-  border-color: transparent;
-  height: 85vh;
+  height: 50vh;
   /* filter: invert(100%); */
 `
 

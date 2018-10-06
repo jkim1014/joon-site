@@ -2,14 +2,16 @@
 import React, { Component } from 'react'
 import { NavLink, withRouter } from 'react-router-dom'
 
-import HamburgerMenu from './components/Hamburger'
+//  import HamburgerMenu from './components/Hamburger'
+
 import {
   Container,
   JoonLogo,
   NavItem,
   NavItems,
-  Wrapper,
-  Mobile
+  Wrapper
+
+  //  Mobile
 } from './styles'
 import Logo from '../../img/JoonLogo.png'
 // import theme from '../../theme'
@@ -52,9 +54,9 @@ class NavigationBar extends Component {
     )
     return (
       <Wrapper>
-        <Mobile>
-          <HamburgerMenu purple={this.props.purple} />
-        </Mobile>
+        {/* <Mobile>
+          <HamburgerMenu purple={this.props.color} />
+        </Mobile> */}
         <Container backCol={this.props.backCol}>
           <NavLink to="/">
             <JoonLogo src={Logo} alt="logo" invert={this.props.invert} />

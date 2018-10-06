@@ -46,7 +46,7 @@ export default class Hamburger extends Component {
       },
       bmBurgerBars: {
         display: 'block',
-        background: this.props.purple ? 'white' : '#333'
+        background: this.props.purple
       }
     }
 
@@ -68,28 +68,15 @@ export default class Hamburger extends Component {
               onClick={() => this.setState({ hamburgerDisplay: true })}
               to="/"
             >
-              HOME
-            </Item>
-            <Item
-              onClick={() => this.setState({ hamburgerDisplay: true })}
-              to="/blog"
-            >
-              BLOG
-            </Item>
-            <Item
-              onClick={() => this.setState({ hamburgerDisplay: true })}
-              to="/portfolio"
-            >
-              PORTFOLIO
+              HOME/PROJECTS
             </Item>
             <Item
               onClick={() => this.setState({ hamburgerDisplay: true })}
               to="/about"
             >
-              ABOUT US
+              ABOUT ME
             </Item>
-            <Item to="/join">JOIN</Item>
-            <Item to="/contact">CONTACT US</Item>
+            <Item to="/contact">CONTACT </Item>
           </Menu>
         </View>
       </div>
