@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router'
 import { Container, NavItem, Background } from './styles'
 import Harvard from '../../img/Harvard.png'
 import HSA from '../../img/HSA.png'
@@ -30,7 +31,10 @@ class ProjectCard extends Component {
   render() {
     const { title, num, display, firstColor, height, width } = this.props
     return (
-      <Container firstColor={firstColor}>
+      <Container
+        firstColor={firstColor}
+        onClick={() => this.props.history.push(`/project/${title}`)}
+      >
         <Background src={FindDisplay(num)} width={width} height={height} />
         <NavItem purple="white" to={`/project/${title}`}>
           {display}
@@ -40,4 +44,4 @@ class ProjectCard extends Component {
   }
 }
 
-export default ProjectCard
+export default withRouter(ProjectCard)

@@ -21,11 +21,6 @@ const StyledNavLink = styled(NavLink)`
   font-size: 150%;
   letter-spacing: 0.6px;
   text-align: center;
-  &:hover {
-    border-bottom: ${({ theme, purple }) =>
-      `2px solid ${purple ? '#fff' : theme.colors.tertiary}`};
-  }
-  /* Home shouldn't have underline */
   &.active {
     border-bottom: ${({ theme, purple, to }) =>
       to === '/' ? '' : `2px solid ${purple ? '#fff' : theme.colors.tertiary}`};
