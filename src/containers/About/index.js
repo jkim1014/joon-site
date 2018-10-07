@@ -69,7 +69,7 @@ class About extends Component {
             <Writing>
               I like making cool stuff. Recently, I have dabbled in Javscript
               full-stack development. Off my coding chair, I enjoy hitting the
-              sweet spot of my gold club and waiting for breezy days to sail on
+              sweet spot of my golf club and waiting for breezy days to sail on
               the waters with. I am a passionate musician and a music listener
               which has had a huge impact throughout my life. I&#39;m all about
               making things to solve problems relevant to the people close to me
