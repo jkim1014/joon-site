@@ -5,6 +5,7 @@ import request from 'request-promise'
 import Navbar from '../../components/Navbar'
 import {
   BigContainer,
+  SmallContainer,
   Container,
   LeftColumn,
   RightColumn,
@@ -70,7 +71,9 @@ export default class Contact extends Component {
     )
     return (
       <BigContainer>
+        <SmallContainer>
         <Navbar backCol="white" />
+        </SmallContainer>
         <Container>
           <Helmet>
             <title>Contact</title>
@@ -83,7 +86,7 @@ export default class Contact extends Component {
             <Row>
               <Column>
                 {/* <SubHeading>DON&#39;T BE SHY.</SubHeading> */}
-                <Heading>HIT ME UP</Heading>
+                <Heading>GET IN TOUCH</Heading>
               </Column>
               <MailboxMobile src={mailbox} />
             </Row>

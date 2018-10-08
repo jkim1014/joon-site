@@ -7,12 +7,13 @@ export const Container = styled(Flex)`
   justify-content: space-evenly;
   align-items: center;
   color: #f3f3f3;
-  height: 104vh;
+  height: 100%;
 `
 
 export const Background = styled.img`
   border-radius: 0;
-  height: 50vh;
+  height: 100%;
+  width: 100%;
   /* filter: invert(100%); */
 `
 

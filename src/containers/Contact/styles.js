@@ -12,6 +12,13 @@ export const BigContainer = styled(Flex)`
   margin-left: -7px;
 `
 
+export const SmallContainer = styled(Flex)`
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 37px;
+`
+
 export const Container = styled(Flex)`
   @media only screen and (min-width: ${({ theme }) =>
       theme.breakpoints.small.ceiling}) {

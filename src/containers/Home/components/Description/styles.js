@@ -5,7 +5,7 @@ export const Container = styled(Flex)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50%;
+  height: 100%;
   background-color: white;
 `
 
@@ -15,6 +15,5 @@ export const Header = styled(Flex)`
   text-align: center;
   font-size: 4vh;
   letter-spacing: 0.6px;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding: 10vh;
 `

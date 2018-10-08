@@ -9,6 +9,7 @@ import {
   JoonLogo,
   NavItem,
   NavItems,
+  ScrollItem,
   Wrapper
 
   //  Mobile
@@ -42,8 +43,19 @@ class NavigationBar extends Component {
     const DesktopTabs = () => (
       <NavItems>
         <NavItem purple={this.props.color} to="/">
-          Home/Projects
+          Home
         </NavItem>
+        <ScrollItem
+          purple={this.props.color}
+          onClick={() => {
+            this.props.history.push({
+              pathname: '/',
+              state: { project: 'project' }
+            })
+          }}
+        >
+          Projects
+        </ScrollItem>
         <NavItem purple={this.props.color} to="/about">
           About Me
         </NavItem>

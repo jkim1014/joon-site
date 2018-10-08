@@ -22,7 +22,7 @@ import {
 import { SocialIcon } from 'react-social-icons'
 import Helmet from 'react-helmet'
 import pdf from '../../img/JYKResume.pdf'
-import one from '../../img/1.png'
+import one from '../../img/Combo.png'
 import two from '../../img/2.png'
 import three from '../../img/3.png'
 import four from '../../img/4.png'

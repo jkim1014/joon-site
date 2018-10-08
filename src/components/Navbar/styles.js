@@ -48,6 +48,32 @@ const StyledNavLink = styled(NavLink)`
   color: ${props => (props.purple ? '#fff' : '#000')};
 `
 
+export const ScrollItem = props => (
+  <StyledScrollLink {...props} activeClassName="active" />
+)
+
+const StyledScrollLink = styled(Flex)`
+  font-family: ${({ theme }) => theme.fonts.navLink.family};
+  font-weight: ${({ theme }) => theme.fonts.navLink.weight};
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  padding-top: 5px;
+  &:hover {
+    cursor: pointer;
+    border-bottom: ${({ theme, purple }) =>
+      `2px solid ${purple ? '#fff' : theme.colors.tertiary}`};
+  }
+  /* Home shouldn't have underline */
+  &.active {
+    border-bottom: ${({ theme, purple, to }) =>
+      to === '/' ? '' : `2px solid ${purple ? '#fff' : theme.colors.tertiary}`};
+  }
+  padding-top: 19px;
+  margin-right: 66px;
+  text-decoration: none;
+  color: ${props => (props.purple ? '#fff' : '#000')};
+`
+
 export const NavItem = props => (
   <StyledNavLink {...props} activeClassName="active" />
 )

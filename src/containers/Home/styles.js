@@ -4,13 +4,11 @@ import { Flex } from 'grid-styled'
 
 export const Container = styled(Flex)`
   flex-direction: column;
-  height: 200vh;
-  background-color: #92b4f2;
-  margin-top: -8px;
-  margin-left: -8px;
-  margin-right: -8px;
-  padding-top: 45px;
-  justify-content: space-between;
+  height: 280vh;
+
+  margin-top: -10px;
+  margin-bottom: 0;
+  justify-content: center;
   align-self: flex-end;
   @media only screen and (max-width: ${({ theme }) =>
       theme.breakpoints.mobile.floor}) {
@@ -25,8 +23,16 @@ export const Container = styled(Flex)`
   }
 `
 
+export const SmallContainer = styled(Flex)`
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 37px;
+  padding-bottom: 100px;
+`
+
 export const Projects = styled(Flex)`
   flex-direction: column;
-  height: 96%;
+  height: 500vh;
   width: 100%;
 `
