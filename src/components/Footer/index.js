@@ -4,13 +4,14 @@ import {
   Column,
   Row,
   TextLink,
+  ScrollItem,
   Label,
   RightColumn,
   StyledExternalLink,
   JoonLogo
 } from './styles'
 import Logo from '../../img/JoonLogo.png'
-import { NavLink } from 'react-router-dom'
+import { NavLink, withRouter } from 'react-router-dom'
 
 class Footer extends Component {
   render() {
@@ -23,7 +24,17 @@ class Footer extends Component {
         </Column>
         <RightColumn>
           <Row>
-            <TextLink to="/">Home/Projects</TextLink>
+            <TextLink to="/">Home</TextLink>
+            <ScrollItem
+              onClick={() => {
+                this.props.history.push({
+                  pathname: '/',
+                  state: { project: 'project' }
+                })
+              }}
+            >
+              Projects
+            </ScrollItem>
             <StyledExternalLink
               href="https://github.com/jkim1014"
               target="_blank"
@@ -40,4 +51,4 @@ class Footer extends Component {
   }
 }
 
-export default Footer
+export default withRouter(Footer)

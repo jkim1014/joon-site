@@ -84,6 +84,23 @@ export const TextLink = props => (
   <StyledLink {...props} activeClassName="active" />
 )
 
+export const ScrollItem = props => (
+  <StyledScrollLink {...props} activeClassName="active" />
+)
+
+const StyledScrollLink = styled(Flex)`
+  font-family: ${({ theme }) => theme.fonts.title.family};
+  font-weight: ${({ theme }) => theme.fonts.title.weight};
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    cursor: pointer;
+  }
+`
+
 export const Label = styled(Flex)`
   font-family: ${({ theme }) => theme.fonts.title.family};
   font-weight: ${({ theme }) => theme.fonts.title.weight};
