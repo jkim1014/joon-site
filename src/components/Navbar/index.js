@@ -42,9 +42,17 @@ class NavigationBar extends Component {
   render() {
     const DesktopTabs = () => (
       <NavItems>
-        <NavItem purple={this.props.color} to="/">
+        <ScrollItem
+          purple={this.props.color}
+          onClick={() => {
+            this.props.history.push({
+              pathname: '/',
+              state: { project: 'home' }
+            })
+          }}
+        >
           Home
-        </NavItem>
+        </ScrollItem>
         <ScrollItem
           purple={this.props.color}
           onClick={() => {

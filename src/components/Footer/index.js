@@ -24,7 +24,16 @@ class Footer extends Component {
         </Column>
         <RightColumn>
           <Row>
-            <TextLink to="/">Home</TextLink>
+            <ScrollItem
+              onClick={() => {
+                this.props.history.push({
+                  pathname: '/',
+                  state: { project: 'home' }
+                })
+              }}
+            >
+              Home
+            </ScrollItem>
             <ScrollItem
               onClick={() => {
                 this.props.history.push({

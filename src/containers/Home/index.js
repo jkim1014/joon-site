@@ -10,8 +10,12 @@ import { Container, Projects, SmallContainer } from './styles'
 class Home extends Component {
   componentDidMount() {
     if (this.props.location.state !== undefined) {
-      this.something.scrollIntoView()
-      this.props.location.state = undefined
+      if (this.props.location.state.project === 'home') {
+        window.scrollTo(0, 0)
+      } else if (this.props.location.state.project === 'project') {
+        this.something.scrollIntoView()
+        this.props.location.state = undefined
+      }
     }
   }
   render() {
