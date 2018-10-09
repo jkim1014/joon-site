@@ -26,7 +26,7 @@ const theme = {
   colors: {
     primary: '#ffffff', // white
     secondary: '#000000', // black
-    tertiary: '#92b4f2', // cream blue
+    tertiary: '#78738f', // cream gray
     quaternary: '#aaaaaa', // dark grey
     footer: '#4d85ea', // dark blue
     fontPrimary: '#ffffff',

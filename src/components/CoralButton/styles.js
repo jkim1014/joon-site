@@ -11,9 +11,9 @@ export const StyledLink = styled(Link)`
 export const Done = styled(Flex)`
   height: 50px;
   width: ${props => props.width};
-  color: #92b4f2;
+  color: #78738f;
   border-radius: 4px;
-  border: 1px solid #92b4f2;
+  border: 1px solid #78738f;
   font-size: 16px;
   font-family: ${({ theme }) => theme.fonts.navLink.family};
   font-weight: ${({ theme }) => theme.fonts.navLink.weight};
@@ -31,7 +31,7 @@ export const Button = styled(Flex)`
     props.purple
       ? ({ theme }) => theme.colors.quaternary
       : props.disabled
-        ? '#92b4f2'
+        ? '#78738f'
         : ({ theme }) => theme.colors.tertiary};
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.navLink.family};

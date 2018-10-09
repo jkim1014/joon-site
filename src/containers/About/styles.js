@@ -97,7 +97,7 @@ export const TopHeader = styled(Flex)`
   flex-direction: column;
   height: 50vh;
   width: 100vw;
-  background-color: #92b4f2;
+  background-color: #78738f;
   margin-left: -8px;
   margin-right: -8px;
   padding-top: 45px;

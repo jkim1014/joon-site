@@ -86,7 +86,7 @@ export const Text = styled(Flex)`
 `
 export const Heading = styled(Flex)`
   font-family: 'Chivo';
-  color: #92b4f2;
+  color: #78738f;
   font-weight: 'bold';
   font-size: 70px;
   line-height: 98px;

@@ -34,7 +34,7 @@ class About extends Component {
     return (
       <BigContainer>
         <TopHeader>
-          <Navbar color="white" backCol="#92b4f2" invert="invert(100%)" />
+          <Navbar color="white" backCol="#78738f" invert="invert(100%)" />
           <Helmet>
             <title>About</title>
             <meta name="description" content="Get to know me!" />

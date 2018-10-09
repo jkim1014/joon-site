@@ -23,7 +23,7 @@ class Home extends Component {
       <Container>
         <SmallContainer>
           <Helmet>
-            <title>Home/Projects</title>
+            <title>Joon Y Kim</title>
             <meta
               name="description"
               content="Home Page of my personal website"
